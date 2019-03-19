@@ -14,6 +14,14 @@ h1 {
   font-weight: 700;
   margin-left: 15px;
 }
+
+.optionheading {
+  color: #00c888;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
 a {
   text-decoration: none;
   outline: none !important;
@@ -82,4 +90,9 @@ a:focus {
 
 .nestedList li:hover {
   color: #009B3E;
+}
+
+.optiontext {
+  margin-top: 5px;
+  margin-left: 20px;
 }
