@@ -32,10 +32,10 @@
           </div>
           <ul class="nestedList">
             <li>
-              0980802398
+              <button class="tablinks" onclick="openInfo(event, 'Paris')">Paris</button>
             </li>
             <li>
-              11323423423
+              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
             </li>
           </ul>
         </li>
@@ -96,44 +96,45 @@
           </ul>
         </li>
       </ul>
+      <div class="tab">
+        <button class="tablinks" onclick="openInfoi(event, 'London')">London</button>
+        <button class="tablinks" onclick="openInfo(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+      </div>
     </div>
 
 
 
 
     <div class="halfdiv">
-      <h1>Info Block</h1>
-      <div class="codeblock">
-        <div class="sameline">
-          <p class="code"> this is some code</p><p class="codeoptions"> -- options</p>
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <h1>Info Block</h1>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h1>Info Block</h1>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h1>Info Block</h1>
+        <p>Tokyo is the capital of Japan.</p>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code"> this is some code</p><p class="codeoptions"> -- options</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+
     </div>
 
-    <!-- Tab content -->
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
   </div>
 
   <script>
-  function openCity(evt, cityName) {
+  function openInfo(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
