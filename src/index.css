@@ -1,13 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
 
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 a {
   text-decoration: none;
   outline: none !important;
-  color: slateblue;
+  color: #00c888; /* lime green 84C318 */
 }
-a:hover,
-a:focus {
-  color: darkslateblue;
+a:hover {
+  color: #009B3E;
+  font-weight: 500;
 }
+/* a:focus {
+  color: #005B3E;
+} */
 
 .wrapper {
   /*background-color: #123123;*/
@@ -20,14 +32,27 @@ a:focus {
 
 .codeblock {
   background-color: #000;
-  color: #fff;
-  font-family: 'Roboto Mono', monospace;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
+  width: auto;
 }
 
 .code {
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+}
 
+.codeoptions {
+  color: #00c888;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+.sameline {
+  display: flex;
+  flex-wrap: nowrap;
 }
