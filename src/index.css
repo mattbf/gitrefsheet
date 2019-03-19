@@ -1,0 +1,80 @@
+html {
+  font-size: 10pt;
+  line-height: 1.4;
+  font-weight: 400;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', 'Fira Sans', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  color: #333;
+  background: rgba(0,0,0,.1);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.1) 100vh);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100vh,rgba(0,0,0,.1)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,.1) 100vh);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,.1) 100vh);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,.1) 100vh);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,.1) 100vh);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb00', endColorstr='#dddddd00',GradientType=0);
+}
+body {
+  margin: 0 auto;
+  max-width: 850px;
+  min-height: 100%;
+  padding: 2em;
+}
+q:before {content: '\201c'}
+q:after  {content: '\201d'}
+q q:before {content: '\2018'}
+q q:after  {content: '\2019'}
+h1, h2, h3, h4, h5, h6 {
+  margin: .5em 0;
+  font-weight: 600;
+  letter-spacing: -.03em;
+  line-height: 1.2;
+  font-family: 'Fira Sans', 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  word-break: break-word;
+}
+h1 {
+  text-align: center;
+  font-size: 480%;
+  font-weight: 700;
+  line-height: 1;
+  color: #333;
+  text-shadow: white 0 -1px 0;
+}
+h1 + h2 {
+  margin-top: -1em;
+  margin-bottom: 1.5em;
+  font-size: 200%;
+  line-height: 1.4;
+  font-weight: 300;
+  text-align: center;
+  color: #777;
+}
+h2 {
+  font-size: 300%;
+}
+h3 {
+  font-size: 220%;
+}
+h4 {
+  font-size: 180%;
+}
+h5 {
+  font-size: 140%;
+}
+h6 {
+  font-size: 120%;
+}
+a {
+  text-decoration: none;
+  outline: none !important;
+  color: slateblue;
+}
+a:hover,
+a:focus {
+  color: darkslateblue;
+}
+
+.wrapper {
+  background-color: #000;
+}
