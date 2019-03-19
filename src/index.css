@@ -43,6 +43,7 @@ a:focus {
 
 .halfdiv {
   width: 50%;
+  height: 100%;
 }
 
 .codeblock {

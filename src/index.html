@@ -32,10 +32,10 @@
           </div>
           <ul class="nestedList">
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Paris')">Paris</button>
+              <button class="tablinks" onclick="openInfo(event, 'cd')">cd</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'help')">Tokyo</button>
             </li>
           </ul>
         </li>
@@ -46,10 +46,10 @@
           </div>
           <ul class="nestedList">
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'init')">init</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'clone')">clone</button>
             </li>
           </ul>
         </li>
@@ -103,18 +103,33 @@
 
     <div class="halfdiv">
       <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <h1>Info Block</h1>
+      <div id="cd" class="tabcontent">
+        <h1>Setup > cd</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">cd</p><p class="codeoptions"> folder/reponame</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Use the <a onclick="openInfo(event, 'help')">cd</a> command to navigate folders and files on your computer </p>
+        <h4 class="optionheading">filename</h4>
+        <p class="optiontext">You can type a folder or filename to navigate to it. You can also type multiple folders to navigate to a nested folder: folder1/nestedfolder/folder3</p>
+        <h4 class="optionheading">..</h4>
+        <p class="optiontext">use cd .. to naviagte backwards. Like before, you can use multiple to navigate back up the folder tree: cd../../..</p>
+
+      </div>
+      <div id="help" class="tabcontent">
+        <h1>Setup > help</h1>
         <p>London is the capital city of England.</p>
       </div>
 
-      <div id="Paris" class="tabcontent">
-        <h1>Info Block</h1>
+      <div id="init" class="tabcontent">
+        <h1>Projects > init</h1>
         <p>Paris is the capital of France.</p>
       </div>
 
-      <div id="Tokyo" class="tabcontent">
-        <h1>Info Block</h1>
+      <div id="clone" class="tabcontent">
+        <h1>Projects > clone</h1>
         <p>Tokyo is the capital of Japan.</p>
         <div class="codeblock">
           <div class="sameline">
