@@ -44,6 +44,16 @@ a:focus {
 .halfdiv {
   width: 50%;
   height: 100%;
+  padding: 25px;
+}
+
+.halfdivalt {
+  background-color: rgba(240, 248, 255, 0.9);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  margin-right: 0px;
+  margin-left: 50%;
 }
 
 .codeblock {
@@ -53,6 +63,9 @@ a:focus {
   padding-top: 3px;
   padding-bottom: 3px;
   width: auto;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .code {
