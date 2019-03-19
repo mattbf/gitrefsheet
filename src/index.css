@@ -8,6 +8,12 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
+.heading3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-left: 15px;
+}
 a {
   text-decoration: none;
   outline: none !important;
@@ -55,4 +61,25 @@ a:hover {
 .sameline {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
+}
+
+.outerlist {
+  list-style-type: none;
+}
+
+.outerlist li {
+  background: #cce5ff;
+  margin: 25px;
+}
+
+.nestedList li {
+  margin: 3px;
+  list-style-type: none;
+  color: #00c888;
+  font-weight: 500;
+}
+
+.nestedList li:hover {
+  color: #009B3E;
 }
