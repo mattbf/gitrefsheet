@@ -21,50 +21,7 @@ body {
   min-height: 100%;
   padding: 2em;
 }
-q:before {content: '\201c'}
-q:after  {content: '\201d'}
-q q:before {content: '\2018'}
-q q:after  {content: '\2019'}
-h1, h2, h3, h4, h5, h6 {
-  margin: .5em 0;
-  font-weight: 600;
-  letter-spacing: -.03em;
-  line-height: 1.2;
-  font-family: 'Fira Sans', 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-  word-break: break-word;
-}
-h1 {
-  text-align: center;
-  font-size: 480%;
-  font-weight: 700;
-  line-height: 1;
-  color: #333;
-  text-shadow: white 0 -1px 0;
-}
-h1 + h2 {
-  margin-top: -1em;
-  margin-bottom: 1.5em;
-  font-size: 200%;
-  line-height: 1.4;
-  font-weight: 300;
-  text-align: center;
-  color: #777;
-}
-h2 {
-  font-size: 300%;
-}
-h3 {
-  font-size: 220%;
-}
-h4 {
-  font-size: 180%;
-}
-h5 {
-  font-size: 140%;
-}
-h6 {
-  font-size: 120%;
-}
+
 a {
   text-decoration: none;
   outline: none !important;
@@ -77,4 +34,16 @@ a:focus {
 
 .wrapper {
   background-color: #000;
+}
+
+.codeblock {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.code {
+  
 }
