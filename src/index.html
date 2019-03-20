@@ -154,21 +154,29 @@
 
       <div id="init" class="tabcontent">
         <h1>Projects > init</h1>
-        <p>Paris is the capital of France.</p>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git init</p><p class="codeoptions"></p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>This command creates an empty Git repository. An initial HEAD file that references the HEAD of the master branch is also created.Use the <a onclick="openInfo(event, 'help')">cd</a> command to navigate inot your newly created repo </p>
+        <h4>Options</h4>
       </div>
 
       <div id="clone" class="tabcontent">
         <h1>Projects > clone</h1>
-        <p>Tokyo is the capital of Japan.</p>
         <div class="codeblock">
           <div class="sameline">
-            <p class="code"> this is some code</p><p class="codeoptions"> -- options</p>
+            <p class="code">git clone</p><p class="codeoptions">--options</p>
           </div>
         </div>
         <h4>Description</h4>
-        <p>jfalsdjlfajdlkfjsalkdfjlksadjflsdajflsdjafl;sdahverfajhflsdakjl</p>
-        <h4 class="optionheading">--Option</h4>
-        <p class="optiontext">jfalsdjlfajdlkfjsalkdfjlksadjflsdajflsdjafl;sdahverfajhflsdakjl</p>
+        <p>Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using <a onclick="openInfo(event, 'help')">git branch -r</a>), and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch. </p>
+        <h4>Options</h4>
+        <h4 class="optionheading">--branch</h4>
+        <p class="optiontext">Instead of pointing the newly created HEAD to the branch pointed to by the cloned repository’s HEAD, point to <name> branch instead. In a non-bare repository, this is the branch that will be checked out. --branch can also take tags and detaches the HEAD at that commit in the resulting repository.</p>
+        </div>
       </div>
 
     </div>
@@ -177,7 +185,7 @@
   </div>
 
   <script>
-  function openInfo(evt, cityName) {
+  function openInfo(evt, commandName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -194,7 +202,7 @@
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(commandName).style.display = "block";
     evt.currentTarget.className += " active";
   }
   </script>
