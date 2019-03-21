@@ -80,10 +80,16 @@
           </div>
           <ul class="nestedList">
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'branch')">branch</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'checkout')">checkout</button>
+            </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'merge')">merge</button>
+            </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'log')">log</button>
             </li>
           </ul>
         </li>
@@ -283,6 +289,92 @@
         <p class="optiontext">If the option --all or -a is given, all available commands are printed on the standard output.</p>
 
       </div>
+
+      <!-- Branching and Merging -->
+      <div id="branch" class="tabcontent">
+        <h1>Branching and Merging > branch</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git branch</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>If --list is given, or if there are no non-option arguments, existing
+           branches are listed; the current branch will be highlighted with an
+           asterisk.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> -r </h4>
+        <p class="optiontext">Causes the remote-tracking branches to be listed</p>
+        <h4 class="optionheading"> -a </h4>
+        <p class="optiontext">shows both local and remote branches</p>
+        <h4 class="optionheading"> < branchname > </h4>
+        <p class="optiontext">Creates a branch with specified name</p>
+
+      </div>
+      <div id="checkout" class="tabcontent">
+        <h1>Branching and Merging > checkout</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git checkout</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Updates files in the working tree to match the version in the index
+          or the specified tree. If no paths are given, git checkout will also
+          update HEAD to set the specified branch as the current branch.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> < branch > </h4>
+        <p class="optiontext">To prepare for working on < branch >, switch to it
+          by updating the index and the files in the working tree, and by
+          pointing HEAD at the branch. Local modifications to the files in the
+          working tree are kept, so that they can be committed to the < branch >.
+        </p>
+
+      </div>
+      <div id="merge" class="tabcontent">
+        <h1>Branching and Merging > merge</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git merge</p><p class="codeoptions"> branch</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Incorporates changes from the named commits (since the time their
+          histories diverged from the current branch) into the current branch.
+          This command is used by git pull to incorporate changes from another
+          repository and can be used by hand to merge changes from one branch
+          into another.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> -- commit</h4>
+        <p class="optiontext">Perform the merge and commit the result. This
+          option can be used to override --no-commit.
+        </p>
+
+      </div>
+      <div id="log" class="tabcontent">
+        <h1>Branching and Merging > log</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git checkout</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Shows commit history
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> path </h4>
+        <p class="optiontext"> Use git log path to inspect certain changes on a
+          specific file
+        </p>
+        <h4 class="optionheading"> -# </h4>
+        <p class="optiontext"> eg. use -3 to only show the last 3
+        </p>
+
+      </div>
+
 
     </div>
 
