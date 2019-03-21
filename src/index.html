@@ -51,6 +51,9 @@
             <li>
               <button class="tablinks" onclick="openInfo(event, 'clone')">clone</button>
             </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'remote add')">remote add</button>
+            </li>
           </ul>
         </li>
         <li>
@@ -100,41 +103,17 @@
           </div>
           <ul class="nestedList">
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'fetch')">fetch</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'pull')">pull</button>
+            </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'push')">push</button>
             </li>
           </ul>
         </li>
-        <li>
-          <div class="sameline">
-            <i class="material-icons">share</i>
-            <h3 class="heading3">Sharing and Updating</h3>
-          </div>
-          <ul class="nestedList">
-            <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
-            </li>
-            <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div class="sameline">
-            <i class="material-icons">share</i>
-            <h3 class="heading3">Sharing and Updating</h3>
-          </div>
-          <ul class="nestedList">
-            <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
-            </li>
-            <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
-            </li>
-          </ul>
-        </li>
+
       </ul>
     </div>
 
@@ -200,6 +179,23 @@
         <h4 class="optionheading">--branch</h4>
         <p class="optiontext">Instead of pointing the newly created HEAD to the branch pointed to by the cloned repository’s HEAD, point to <name> branch instead. In a non-bare repository, this is the branch that will be checked out. --branch can also take tags and detaches the HEAD at that commit in the resulting repository.</p>
         </div>
+      <div id="remote add" class="tabcontent">
+          <h1>Projects > remote add </h1>
+          <div class="codeblock">
+            <div class="sameline">
+              <p class="code">git remote add</p><p class="codeoptions">URL or SSH</p>
+            </div>
+          </div>
+          <h4>Description</h4>
+          <p>For adding github (or any other provider) as the remote repo for a
+            local project. Git remote add origin git@github.com:username/new_repo
+          </p>
+          <h4>Options</h4>
+          <h4 class="optionheading">Git remote add origin git@github.com:username/new_repo</h4>
+          <p class="optiontext">for adding github as repo to local project and
+            using SSH (Usd https://github.com/username/new_repo for password pushing)
+          </p>
+          </div>
 
       <!-- Working -->
       <div id="add" class="tabcontent">
@@ -371,6 +367,60 @@
         </p>
         <h4 class="optionheading"> -# </h4>
         <p class="optiontext"> eg. use -3 to only show the last 3
+        </p>
+
+      </div>
+
+      <!-- Sharing and Updating -->
+      <div id="fetch" class="tabcontent">
+        <h1>Sharing and Updating > fetch</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git fetch</p><p class="codeoptions"> remotename</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>git fetch can fetch from either a single named repository or URL, or
+          from several repositories at once if < group > is given and there is a
+          remotes.< group > entry in the configuration file. (See git-config).
+          When no remote is specified, by default the origin remote will be
+          used, unless there’s an upstream branch configured for the current
+          branch.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> remotename </h4>
+        <p class="optiontext">Can be name or URL</p>
+
+      </div>
+      <div id="pull" class="tabcontent">
+        <h1>Sharing and Updating > pull</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git pull</p><p class="codeoptions"> remote < branch ></p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>
+          gets latest changes from the specific branch on remote and merges them locally
+
+          Incorporates changes from a remote repository into the current branch.
+           In its default mode, git pull is shorthand for git fetch followed by
+            git merge FETCH_HEAD. More precisely, git pull runs git fetch with
+            the given parameters and calls git merge to merge the retrieved
+            branch heads into the current branch. With --rebase, it runs git
+            rebase instead of git merge.
+        </p>
+
+      </div>
+      <div id="push" class="tabcontent">
+        <h1>Sharing and Updating > push</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git push</p><p class="codeoptions"> remotename</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p> push the local changes that have been commited to the remote repo
         </p>
 
       </div>
