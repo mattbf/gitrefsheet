@@ -126,9 +126,6 @@
       </ul>
     </div>
 
-
-
-
     <div class="halfdivalt">
       <!-- Tab content -->
       <div id="cd" class="tabcontent">
@@ -149,7 +146,21 @@
       </div>
       <div id="help" class="tabcontent">
         <h1>Setup > help</h1>
-        <p>London is the capital city of England.</p>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git help</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>With no options and no COMMAND or GUIDE given, the synopsis of the git command and a list of the most commonly used Git commands are printed on the standard output. </p>
+        <h4>Options</h4>
+        <h4 class="optionheading">--all</h4>
+        <p class="optiontext">If the option --all or -a is given, all available commands are printed on the standard output.</p>
+        <h4 class="optionheading">--guide</h4>
+        <p class="optiontext">If the option --guide or -g is given, a list of the useful Git guides is also printed on the standard output.</p>
+        <h4 class="optionheading">COMMAND --help</h4>
+        <p class="optiontext">If an alias is given, git shows the definition of the alias on standard output. To get the manual page for the aliased command, use git COMMAND --help.</p>
+
       </div>
 
       <div id="init" class="tabcontent">
@@ -160,7 +171,7 @@
           </div>
         </div>
         <h4>Description</h4>
-        <p>This command creates an empty Git repository. An initial HEAD file that references the HEAD of the master branch is also created.Use the <a onclick="openInfo(event, 'help')">cd</a> command to navigate inot your newly created repo </p>
+        <p>This command creates an empty Git repository. An initial HEAD file that references the HEAD of the master branch is also created.Use the <a onclick="openInfo(event, 'cd')">cd</a> command to navigate inot your newly created repo </p>
         <h4>Options</h4>
       </div>
 
