@@ -35,7 +35,7 @@
               <button class="tablinks" onclick="openInfo(event, 'cd')">cd</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'help')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'help')">help</button>
             </li>
           </ul>
         </li>
@@ -60,10 +60,16 @@
           </div>
           <ul class="nestedList">
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'add')">add</button>
             </li>
             <li>
-              <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+              <button class="tablinks" onclick="openInfo(event, 'status')">status</button>
+            </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'commit')">commit</button>
+            </li>
+            <li>
+              <button class="tablinks" onclick="openInfo(event, 'reset')">reset</button>
             </li>
           </ul>
         </li>
@@ -128,6 +134,7 @@
 
     <div class="halfdivalt">
       <!-- Tab content -->
+      <!-- Setup -->
       <div id="cd" class="tabcontent">
         <h1>Setup > cd</h1>
         <div class="codeblock">
@@ -162,7 +169,7 @@
         <p class="optiontext">If an alias is given, git shows the definition of the alias on standard output. To get the manual page for the aliased command, use git COMMAND --help.</p>
 
       </div>
-
+      <!-- Projects -->
       <div id="init" class="tabcontent">
         <h1>Projects > init</h1>
         <div class="codeblock">
@@ -174,7 +181,6 @@
         <p>This command creates an empty Git repository. An initial HEAD file that references the HEAD of the master branch is also created.Use the <a onclick="openInfo(event, 'cd')">cd</a> command to navigate inot your newly created repo </p>
         <h4>Options</h4>
       </div>
-
       <div id="clone" class="tabcontent">
         <h1>Projects > clone</h1>
         <div class="codeblock">
@@ -188,7 +194,97 @@
         <h4 class="optionheading">--branch</h4>
         <p class="optiontext">Instead of pointing the newly created HEAD to the branch pointed to by the cloned repository’s HEAD, point to <name> branch instead. In a non-bare repository, this is the branch that will be checked out. --branch can also take tags and detaches the HEAD at that commit in the resulting repository.</p>
         </div>
+
+      <!-- Working -->
+      <div id="add" class="tabcontent">
+        <h1>Working > add</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git add</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>This command updates the index using the current content found in the
+           working tree, to prepare the content staged for the next commit. It
+           typically adds the current content of existing paths as a whole, but
+            with some options it can also be used to add content with only part
+             of the changes made to the working tree files applied, or remove
+             paths that do not exist in the working tree anymore. The "index"
+             holds a snapshot of the content of the working tree, and it is this
+              snapshot that is taken as the contents of the next commit. Thus
+              after making any changes to the working tree, and before running
+              the commit command, you must use the add command to add any new or
+               modified files to the index.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading"> filename.ext</h4>
+        <p class="optiontext">Add the specified file or foldere to the commit or staging area</p>
+        <h4 class="optionheading"> * </h4>
+        <p class="optiontext">Adds all changed files and folders to staging area</p>
+
       </div>
+      <div id="status" class="tabcontent">
+        <h1>Working > status</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git status</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Displays paths that have differences between the index file and the
+          current HEAD commit, paths that have differences between the working
+          tree and the index file, and paths in the working tree that are not
+          tracked by Git (and are not ignored by gitignore[5]). The first are
+          what you would commit by running git commit; the second and third are
+          what you could commit by running git add before running git commit.
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading">--branch</h4>
+        <p class="optiontext">Show the branch and tracking info even in short-format.</p>
+
+      </div>
+      <div id="commit" class="tabcontent">
+        <h1>Working > commit</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git commit</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>Create a new commit containing the current contents of the index and
+          the given log message describing the changes. The new commit is a
+          direct child of HEAD, usually the tip of the current branch, and the
+          branch is updated to point to it (unless no branch is associated with
+          the working tree, in which case HEAD is "detached" as described
+          in git-checkout).
+        </p>
+        <h4>Options</h4>
+        <h4 class="optionheading">--a</h4>
+        <p class="optiontext">Tell the command to automatically stage files that
+           have been modified and deleted, but new files you have not told Git
+           about are not affected.
+         </p>
+         <h4 class="optionheading">-m</h4>
+         <p class="optiontext">Write a message in quotations to append to the commit
+         </p>
+
+      </div>
+      <div id="reset" class="tabcontent">
+        <h1>Working > reset</h1>
+        <div class="codeblock">
+          <div class="sameline">
+            <p class="code">git reset</p><p class="codeoptions"> --options</p>
+          </div>
+        </div>
+        <h4>Description</h4>
+        <p>????? </p>
+        <h4>Options</h4>
+        <h4 class="optionheading">--all</h4>
+        <p class="optiontext">If the option --all or -a is given, all available commands are printed on the standard output.</p>
+
+      </div>
+
+    </div>
 
     </div>
 
